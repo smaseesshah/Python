@@ -1,9 +1,11 @@
 # Default Argument Function
 def greet(name,greeting="Hello,"):# greeting is default default
     print(greeting,name)
-greet("Asees") 
-greet("Asees","Hi,")#also if we provide the 2nd argument it will replace the default 
-
+if __name__=="__main__":
+    print("This will run only in the current module")
+    greet("Asees") 
+    greet("Asees","Hi,")#also if we provide the 2nd argument it will replace the default 
+print("Others will run in all module from\n '''")
 # Keyword Argument Function
 def person(name,age,profession):
     print(name,"is",age,"years old and is a",profession)
@@ -27,4 +29,4 @@ print("TOtal =",sum)
 # Type Hint Function
 def double_num(num:int)->int:#will recieve int value and return int value
     return num+num
-print("Double of 8 =",double_num(8))
+print("Double of 8 =",double_num(8),"\n'''")
