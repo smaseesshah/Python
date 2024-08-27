@@ -20,7 +20,6 @@ def encode(text:str)->str:
             l.reverse()
             word="".join(l)
             text_l.append(word)
-    print(text_l)
     text=" ".join(text_l)
     return text
 def decode(text:str)->str:
@@ -42,7 +41,7 @@ def decode(text:str)->str:
     return text
 
 while True:
-    n=input("\nEnter:\n1 To Encode A Text File : \n2 To Decode A Text File : \n3 To Quit\n>")
+    n=input("\nEnter:\n1 To Encode A Text File : \n2 To Decode A Text File : \n3 To Quit\n> ")
     if n=="1":    
         text=input("Enter Text To Encode : ")
         print("Encoded Text : ",encode(text))
