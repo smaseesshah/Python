@@ -70,6 +70,10 @@ def mainGame():
     playerFlapAccv = -8 # velocity while flapping
     playerFlapped = False # It is true only when the bird is flapping
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> 0ff8c0fd35f1564cb8c2e3037b29d401d9834ab9
     while True:
         for event in pygame.event.get():
             if event.type == QUIT or (event.type == KEYDOWN and event.key == K_ESCAPE):
@@ -81,6 +85,10 @@ def mainGame():
                     playerFlapped = True
                     GAME_SOUNDS['wing'].play()
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> 0ff8c0fd35f1564cb8c2e3037b29d401d9834ab9
         crashTest = isCollide(playerx, playery, upperPipes, lowerPipes) # This function will return true if the player is crashed
         if crashTest:
             return     
@@ -94,6 +102,10 @@ def mainGame():
                 print(f"Your score is {score}") 
                 GAME_SOUNDS['point'].play()
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> 0ff8c0fd35f1564cb8c2e3037b29d401d9834ab9
         if playerVelY <playerMaxVelY and not playerFlapped:
             playerVelY += playerAccY
 
@@ -172,11 +184,19 @@ def getRandomPipe():
 
 
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> 0ff8c0fd35f1564cb8c2e3037b29d401d9834ab9
 if __name__ == "__main__":
     # This will be the main point from where our game will start
     pygame.init() # Initialize all pygame's modules
     FPSCLOCK = pygame.time.Clock()
+<<<<<<< HEAD
     pygame.display.set_caption('Flappy Bird by Samsepal')
+=======
+    pygame.display.set_caption('Flappy Bird by CodeWithHarry')
+>>>>>>> 0ff8c0fd35f1564cb8c2e3037b29d401d9834ab9
     GAME_SPRITES['numbers'] = ( 
         pygame.image.load('gallery/sprites/0.png').convert_alpha(),
         pygame.image.load('gallery/sprites/1.png').convert_alpha(),
@@ -209,3 +229,7 @@ if __name__ == "__main__":
     while True:
         welcomeScreen()
         mainGame() 
+<<<<<<< HEAD
+=======
+
+>>>>>>> 0ff8c0fd35f1564cb8c2e3037b29d401d9834ab9

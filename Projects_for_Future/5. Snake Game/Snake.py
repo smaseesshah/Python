@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 author = 'Samsepal'
+=======
+author = 'CodeWithHarry'
+>>>>>>> 0ff8c0fd35f1564cb8c2e3037b29d401d9834ab9
 
 #Importing The Modules
 import pygame
@@ -9,6 +13,10 @@ import os
 pygame.mixer.init()
 pygame.init()
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> 0ff8c0fd35f1564cb8c2e3037b29d401d9834ab9
 #Colors
 white = (255, 255, 255)
 red = (255, 0, 0)
@@ -27,7 +35,11 @@ screen_height = 600
 gameWindow = pygame.display.set_mode((screen_width, screen_height))
 
 #Game Title
+<<<<<<< HEAD
 pygame.display.set_caption("Snake By Samsepal")
+=======
+pygame.display.set_caption("Snake By CodeWithHarry")
+>>>>>>> 0ff8c0fd35f1564cb8c2e3037b29d401d9834ab9
 pygame.display.update()
 
 #Music
@@ -47,6 +59,10 @@ def plot_snake(gameWindow, color, snk_list, snake_size):
    for x,y in snk_list:
        pygame.draw.rect(gameWindow, color, [x, y, snake_size, snake_size])
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> 0ff8c0fd35f1564cb8c2e3037b29d401d9834ab9
 #Welcome Screen
 
 def welcome():
@@ -146,6 +162,10 @@ def gameloop():
            head.append(snake_y)
            snk_list.append(head)
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> 0ff8c0fd35f1564cb8c2e3037b29d401d9834ab9
            if len(snk_list)>snk_length:
                del snk_list[0]
            if head in snk_list[:-1]:
@@ -164,3 +184,7 @@ def gameloop():
    pygame.quit()
    quit()
 welcome()
+<<<<<<< HEAD
+=======
+
+>>>>>>> 0ff8c0fd35f1564cb8c2e3037b29d401d9834ab9

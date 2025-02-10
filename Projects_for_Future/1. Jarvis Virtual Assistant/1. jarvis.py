@@ -13,10 +13,18 @@ voices = engine.getProperty('voices')
 # print(voices[1].id)
 engine.setProperty('voice', voices[0].id)
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> 0ff8c0fd35f1564cb8c2e3037b29d401d9834ab9
 def speak(audio):
     engine.say(audio)
     engine.runAndWait()
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> 0ff8c0fd35f1564cb8c2e3037b29d401d9834ab9
 def wishMe():
     hour = int(datetime.datetime.now().hour)
     if hour>=0 and hour<12:
@@ -82,6 +90,10 @@ if __name__ == "__main__":
         elif 'open stackoverflow' in query:
             webbrowser.open("stackoverflow.com")   
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> 0ff8c0fd35f1564cb8c2e3037b29d401d9834ab9
         elif 'play music' in query:
             music_dir = 'D:\\Non Critical\\songs\\Favorite Songs2'
             songs = os.listdir(music_dir)
@@ -96,15 +108,29 @@ if __name__ == "__main__":
             codePath = "C:\\Users\\Haris\\AppData\\Local\\Programs\\Microsoft VS Code\\Code.exe"
             os.startfile(codePath)
 
+<<<<<<< HEAD
         elif 'email to samsepal' in query:
             try:
                 speak("What should I say?")
                 content = takeCommand()
                 to = "smaseesshah786@gmail.com"    
+=======
+        elif 'email to harry' in query:
+            try:
+                speak("What should I say?")
+                content = takeCommand()
+                to = "harryyourEmail@gmail.com"    
+>>>>>>> 0ff8c0fd35f1564cb8c2e3037b29d401d9834ab9
                 sendEmail(to, content)
                 speak("Email has been sent!")
             except Exception as e:
                 print(e)
+<<<<<<< HEAD
                 speak("Sorry samsepal. I am not able to send this email")    
         else:
             print("No query matched")
+=======
+                speak("Sorry my friend harry bhai. I am not able to send this email")    
+        else:
+            print("No query matched")
+>>>>>>> 0ff8c0fd35f1564cb8c2e3037b29d401d9834ab9

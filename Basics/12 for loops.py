@@ -30,4 +30,9 @@ for item in l:
 # string
 s = "Happy COding"
 for character in s:
+<<<<<<< HEAD
     print(character,end=" ")
+=======
+    print(character,end=" ")
+
+>>>>>>> 0ff8c0fd35f1564cb8c2e3037b29d401d9834ab9
